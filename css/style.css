@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Content&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Content", cursive, sans-serif;
+}
+
+nav {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 11;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icon .material-icons:hover ~.left{
+  float: left;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: none;
+}
+
+.icon > .material-icons {
+  font-size: 40px;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+li > a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-image: url(../Image/photo_2023-08-21_15-02-27.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+}
+
+.welcome {
+  background-color: #646567;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 15px;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+/* --value-- */
+
+#value {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#value > .title {
+  background-color: #1482db;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+}
+
+#value > .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+#value > .content > li {
+  width: 19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#value > .content > li:hover{
+    box-shadow: 3px 3px 10px rgb(43, 39, 39);
+    transition: 0.9s;
+    cursor: pointer;
+}
+#value > .content > li > img {
+  width: 80px;
+}
+
+#value > .content > li > .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#value > .content > li > .text > .description {
+  text-align: justify;
+}
+
+/* --canteen-- */
+
+#canteen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#canteen > .title {
+  background-color: #1482db;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+}
+
+#canteen > .content > .image {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#canteen > .content > .image > li {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+#canteen > .content > .image > li:hover{
+    box-shadow: 3px 3px 10px rgb(43, 39, 39);
+    transition: 0.9s;
+    cursor: pointer;
+
+}
+#canteen > .content > .image > li > img {
+  width: 150px;
+}
+#canteen > .content > .image > li > .text {
+  text-align: justify;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.notice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  padding: 10px;
+}
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+th,
+td {
+  width: 150px;
+  border: 1px solid;
+  padding: 14px;
+  text-align: center;
+}
+th:hover,
+td:hover{
+  background-color: #1482db;
+  color: white;
+  transition: 0.20s;
+}
+
+/* --sport-- */
+
+#sport {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#sport > .title {
+  background-color: #1482db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#sport > .content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  gap: 15px;
+}
+#sport > .content > li {
+  background-color: #181111;
+  color: white;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgb(43, 39, 39);
+  gap: 15px;
+}
+#sport > .content > li > img {
+  width: 170px;
+}
+#sport > .content > li > .text {
+  text-align: justify;
+}
+#aerobic {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#aerobic > .title {
+  background-color: #1482db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#aerobic > .image {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#aerobic > .image > li > img {
+  width: 458px;
+  box-shadow: 3px 3px 10px rgb(43, 39, 39);
+}
+
+/* --contact-- */
+
+#contact {
+  background-color: #1482db;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#contact > .title {
+  background-color: #000;
+  color: #1482db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#contact > .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+#contact > .content > .form {
+  background-color: #fff;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+#contact > .content > .form >.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact > .content > .form > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#contact > .content > form,
+.user-name,
+.email,
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#contact > .content > form,
+.user-name > input,
+.email > input,
+.text > input,[type="submit"] {
+  padding: 10px;
+  border-radius: 10px;
+}
+[type="submit"]{
+  background-color: #1482db;
+  color: #fff;
+  border: none;
+}
+#contact > .content > .map {
+  width: 49%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+#contact > .content > .map > .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 321px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 100%;
+}
+
+.gmap_iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+/* --footer-- */
+footer{
+    background-color: #252b36;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+footer>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .left{
+    overflow-x: auto;
+  }
+  #value>.content{
+    flex-wrap: wrap;
+  }
+  #value>.content>li{
+    width: 40%;
+  }
+  #canteen>.content{
+    justify-content: center;
+    align-items: center;
+  }
+  #canteen>.content>.image{
+    flex-wrap: wrap;
+  }
+  #canteen>.content>.image>li{
+    width: 40%;
+  }
+  #canteen.table{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  th,td{
+    padding: 2px;
+    font-size: 12px;
+  }
+  #sport>.content{
+    flex-wrap: wrap;
+  }
+  #sport>.content>li{
+    width: 25%;
+  }
+  #aerobic>.image>li{
+    width: 30%;
+  }
+  #aerobic>.image>li>img{
+    width: 100%;
+  }
+  footer>div{
+    width: 49%;
+  }
+}
+
+
+@media (min-width:320px) and (max-width: 768px){
+  .left{
+    overflow-x: auto;
+  }
+  .right-text{
+    display: none;
+  }
+  #value>.content{
+    flex-wrap: wrap;
+  }
+  #value>.content>li{
+    width: 80%;
+  }
+  #canteen>.content{
+    justify-content: center;
+    align-items: center;
+  }
+  #canteen>.content>.image{
+    flex-wrap: wrap;
+  }
+  #canteen>.content>.image>li{
+    width: 80%;
+  }
+  #canteen.table{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  #canteen.table>table{
+    width: 100%;
+  }
+  th,td{
+    padding: 2px;
+    font-size: 12px;
+  }
+  #sport>.content{
+    flex-wrap: wrap;
+  }
+  #sport>.content>li{
+    width: 40%;
+  }
+  #sport>.content>li>img{
+    width: 100%;
+  }
+  #aerobic>.image>li{
+    width: 40%;
+  }
+  #aerobic>.image>li>img{
+    width: 100%;
+  }
+  #contact>.content{
+    flex-direction: column;
+  }
+  #contact>.content>.form{
+    width: 85%;
+  }
+  #contact>.content>.map{
+    width: 90%;
+  }
+  footer{
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  footer>div{
+    width: 80%;
+  }
+}
+@media (max-width: 320px){
+  .left{
+    overflow-x: auto;
+  }
+  .right-text{
+    display: none;
+  }
+  #value>.content{
+    flex-wrap: wrap;
+  }
+  #value>.content>li{
+    width: 80%;
+  }
+  #canteen>.content{
+    justify-content: center;
+    align-items: center;
+  }
+  #canteen>.content>.image{
+    flex-wrap: wrap;
+  }
+  #canteen>.content>.image>li{
+    width: 80%;
+  }
+  #canteen.table{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  #canteen.table>table{
+    width: 100%;
+    
+  }
+  th,td{
+    padding: 2px;
+    font-size: 12px;
+  }
+  #sport>.content{
+    flex-wrap: wrap;
+  }
+  #sport>.content>li{
+    width: 80%;
+  }
+  #aerobic>.image>li{
+    width: 50%;
+  }
+  #aerobic>.image>li>img{
+    width: 100%;
+  }
+  #contact>.content{
+    flex-direction: column;
+  }
+  #contact>.content>.form{
+    width: 85%;
+  }
+  #contact>.content>.map{
+    width: 90%;
+  }
+  footer{
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  footer>div{
+    width: 80%;
+  }
+}
